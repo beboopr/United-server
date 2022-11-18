@@ -1,0 +1,127 @@
+[debug] [2022-11-18T02:42:00.492Z] ----------------------------------------------------------------------
+[debug] [2022-11-18T02:42:00.493Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-11-18T02:42:00.493Z] CLI Version:   11.16.1
+[debug] [2022-11-18T02:42:00.493Z] Platform:      darwin
+[debug] [2022-11-18T02:42:00.493Z] Node Version:  v16.17.1
+[debug] [2022-11-18T02:42:00.497Z] Time:          Thu Nov 17 2022 21:42:00 GMT-0500 (Eastern Standard Time)
+[debug] [2022-11-18T02:42:00.497Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-18T02:42:00.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-18T02:42:00.529Z] > authorizing via signed-in user (davila.fullrecord.edgar@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-11-18T02:42:00.730Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2022-11-18T02:42:00.731Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-18T02:42:00.731Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-11-18T02:42:00.734Z] [hub] writing locator at /var/folders/xd/1r28f9w97ndbld_cx_11qvfc0000gn/T/hub-united-project-c8.json
+[debug] [2022-11-18T02:42:00.828Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-18T02:42:00.828Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-18T02:42:00.828Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-11-18T02:42:00.833Z] defaultcredentials: writing to file /Users/beboo/.config/firebase/davila_fullrecord.edgar_gmail.com_application_default_credentials.json
+[debug] [2022-11-18T02:42:00.838Z] Setting GAC to /Users/beboo/.config/firebase/davila_fullrecord.edgar_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/beboo/.config/firebase/davila_fullrecord.edgar_gmail.com_application_default_credentials.json"}}
+[debug] [2022-11-18T02:42:00.839Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8/adminSdkConfig [none]
+[debug] [2022-11-18T02:42:01.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8/adminSdkConfig 200
+[debug] [2022-11-18T02:42:01.273Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8/adminSdkConfig {"projectId":"united-project-c8","storageBucket":"united-project-c8.appspot.com"}
+[debug] [2022-11-18T02:42:01.288Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/united-project-c8/sites 
+[debug] [2022-11-18T02:42:01.745Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/united-project-c8/sites 200
+[debug] [2022-11-18T02:42:01.745Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/united-project-c8/sites {"sites":[{"name":"projects/united-project-c8/sites/united-project-c8","defaultUrl":"https://united-project-c8.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-18T02:42:01.745Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8/webApps/-/config [none]
+[debug] [2022-11-18T02:42:02.237Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8/webApps/-/config 200
+[debug] [2022-11-18T02:42:02.237Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8/webApps/-/config {"projectId":"united-project-c8","storageBucket":"united-project-c8.appspot.com","apiKey":"AIzaSyDGIJZ4RbDXMlA0qSZv_xB41Qto6HZmuSo","authDomain":"united-project-c8.firebaseapp.com","messagingSenderId":"536458967385"}
+[debug] [2022-11-18T02:42:02.243Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8 [none]
+[debug] [2022-11-18T02:42:02.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8 200
+[debug] [2022-11-18T02:42:02.611Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/united-project-c8 {"projectId":"united-project-c8","projectNumber":"536458967385","displayName":"United-Project-c8","name":"projects/united-project-c8","resources":{"hostingSite":"united-project-c8"},"state":"ACTIVE","etag":"1_853e4c28-5adf-4e44-823b-0b674d2a9580"}
+[info] i  hosting[united-project-c8]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[united-project-c8]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[debug] [2022-11-18T02:42:02.653Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-11-18T02:42:02.653Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-11-18T02:42:02.653Z] Starting Emulator UI with command {"binary":"node","args":["/Users/beboo/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/beboo/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-11-18T02:42:02.719Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-11-18T02:42:02.719Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/beboo/bocacode/final-Project/UitedProject/server/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/beboo/bocacode/final-Project/UitedProject/server/functions\" for Cloud Functions..."}}
+[debug] [2022-11-18T02:42:02.920Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-11-18T02:42:04.000Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-11-18T02:42:04.001Z] Building nodejs source
+[debug] [2022-11-18T02:42:04.001Z] Analyzing nodejs backend spec
+[debug] [2022-11-18T02:42:04.002Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-11-18T02:42:04.303Z] Serving at port 9005
+
+[debug] [2022-11-18T02:42:04.309Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2022-11-18T02:42:04.311Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Cannot use import statement ou ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Cannot use import statement ou ... \n                                         ^"}
+[debug] [2022-11-18T02:42:04.313Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5002 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-18T02:42:14.600Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js [none]
+[debug] [2022-11-18T02:42:14.604Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-database-compat.js [none]
+[debug] [2022-11-18T02:42:14.606Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js [none]
+[info] i  hosting: 127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /favicon.ico to http://127.0.0.1:5001/united-project-c8/us-central1/api for local Function us-central1/api
+[debug] [2022-11-18T02:42:14.612Z] >>> [apiv2][query] GET http://127.0.0.1:5001/united-project-c8/us-central1/api/favicon.ico 
+[debug] [2022-11-18T02:42:14.613Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-11-18T02:42:14.614Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-11-18T02:42:14.614Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-11-18T02:42:14.615Z] <<< [apiv2][status] GET http://127.0.0.1:5001/united-project-c8/us-central1/api/favicon.ico 404
+[debug] [2022-11-18T02:42:14.615Z] <<< [apiv2][body] GET http://127.0.0.1:5001/united-project-c8/us-central1/api/favicon.ico [stream]
+[info] i  hosting: 127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] "GET /favicon.ico HTTP/1.1" 404 62 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] \"GET /favicon.ico HTTP/1.1\" 404 62 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[debug] [2022-11-18T02:42:14.694Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js 200
+[debug] [2022-11-18T02:42:14.694Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js [stream]
+[debug] [2022-11-18T02:42:14.698Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-database-compat.js 200
+[debug] [2022-11-18T02:42:14.698Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-database-compat.js [stream]
+[debug] [2022-11-18T02:42:14.702Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js 200
+[debug] [2022-11-18T02:42:14.702Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore-compat.js [stream]
+[info] i  hosting: 127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] "GET /__/firebase/9.14.0/firebase-auth-compat.js HTTP/1.1" 200 125641 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] \"GET /__/firebase/9.14.0/firebase-auth-compat.js HTTP/1.1\" 200 125641 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] "GET /__/firebase/9.14.0/firebase-database-compat.js HTTP/1.1" 200 165657 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] \"GET /__/firebase/9.14.0/firebase-database-compat.js HTTP/1.1\" 200 165657 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] "GET /__/firebase/9.14.0/firebase-firestore-compat.js HTTP/1.1" 200 313613 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Nov/2022:02:42:14 +0000] \"GET /__/firebase/9.14.0/firebase-firestore-compat.js HTTP/1.1\" 200 313613 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [18/Nov/2022:02:43:05 +0000] "GET / HTTP/1.1" 200 - "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [18/Nov/2022:02:43:05 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"PostmanRuntime/7.29.2\""}}
